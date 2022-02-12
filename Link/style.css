@@ -1,0 +1,49 @@
+body
+{
+	margin:0;
+    padding:0;
+	font-family: Candara;
+}
+.container
+{
+  position: relative;
+  width: 1200px;
+  height: 300px;
+  margin: 240px auto;
+  background: #000;
+}
+.container .box
+{
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	background: #ff0;
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 10px;
+}
+.container .box:hover .icon
+{
+	top: 20px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.container .box .icon .fa
+{
+	position: absolute;
+	top: 50%;
+	left:  50%
+	transform: translate(-50%,-50%);
+	font-size: 80px;
+	transition: 0.5s;
+	color: #fff;
+} 
+.container .box:hover .icon .fa
+{
+	font-size: 40px;
+	
+}
